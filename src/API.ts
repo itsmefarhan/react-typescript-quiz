@@ -1,3 +1,5 @@
+import { shuffleAnswers } from "./helper";
+
 export const fetchQuestions = async (total: number) => {
   const response = await (
     await fetch(`https://opentdb.com/api.php?amount=${total}&type=multiple`)
@@ -5,7 +7,7 @@ export const fetchQuestions = async (total: number) => {
   return response.results.map(
     (res: { incorrect_answers: string[]; correct_answer: string }) => ({
       ...res,
-      answers: [...res.incorrect_answers, res.correct_answer],
+      answers: shuffleAnswers([...res.incorrect_answers, res.correct_answer]),
     })
   );
 };
