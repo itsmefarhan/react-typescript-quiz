@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## React TypeScript Quiz App
 
-## Available Scripts
-
-In the project directory, you can run:
+This is project 6 of bootcamp. Application is deployed on [surge](https://react-ts-quiz.surge.sh)
 
 ### `npm start`
 
