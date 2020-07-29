@@ -65,7 +65,7 @@ function App() {
   };
 
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div style={{ paddingTop: "50px" }}>
       <Typography variant="h3" align="center" style={{ color: "white" }}>
         React TypeScript Quiz App
       </Typography>
